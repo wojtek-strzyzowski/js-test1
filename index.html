@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+function greaterNumber(x, y){
+
+    if (x < y) {
+
+        console.log(`${y} is greater than ${x}`);
+        
+    }
+    else {
+        console.log(`${x} is greater than ${y}`);
+    }
+}
+greaterNumber (20,10);
+</script>
+
+<script>
+    function helloWorld (lang){
+        if (lang == 'fr'){
+            return 'Bonjour tot le monde';
+        }
+        else if(lang == 'es'){
+            return 'Hola Mundo';
+        }
+        else{
+           return 'Hello World';
+        }
+    }
+    console.log(helloWorld('br'))
+    console.log(helloWorld('fr'))    
+    console.log(helloWorld('es'))
+</script>
+
+<script>
+
+    function assignGrade (Punkte){
+
+        if (Punkte > 89){
+            return 'A';}
+
+            else if (Punkte > 79){
+                return 'B';}
+
+                else if (Punkte >69){
+                    return 'C';
+                }
+                else if (Punkte > 59){
+                    return 'D';
+                }
+                else if (Punkte > 50){
+                    return 'E';
+                }
+                else {
+                    return 'F';
+                }
+
+    }
+console.log(assignGrade(40));
+</script>
+
+<script>
+function pluralizer (noun, number){
+    if (number != 1 &&  noun != 'sheep' && noun != 'geese'){
+        return number + ' ' + noun + 's';
+    }   else {
+        return number + ' ' + noun;
+    }
+}
+console.log(pluralizer('cat', 1));
+console.log(pluralizer('dog', 5));
+console.log(pluralizer('cat', 4));
+console.log(pluralizer('dog', 1));
+
+</script>
+
+</body>
+</html>
